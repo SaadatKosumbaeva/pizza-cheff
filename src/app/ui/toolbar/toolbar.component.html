@@ -1,0 +1,42 @@
+<mat-toolbar class="toolbar">
+  <div class="container toolbar__inner" fxLayout="row" fxLayoutAlign="flex-start center">
+    <a class="logo" routerLink="/" fxFlex="32" fxLayout="row" fxLayoutAlign="flex-start center">
+      <img class="logo__img" src="assets/images/logo.png" alt="Pizza Cheff">
+      <span class="logo__text">Pizza<br>cheff</span>
+    </a>
+    <div fxLayout="row">
+
+      <nav class="toolbar__nav">
+        <a mat-button routerLink="/">Пиццы</a>
+        <a mat-button routerLink="/">Напитки</a>
+        <a mat-button routerLink="/">Доставка и оплата</a>
+        <a mat-button routerLink="/">Контакты</a>
+      </nav>
+
+      <div class="toolbar__menu">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <a routerLink="/" mat-menu-item>
+            <span>Пиццы</span>
+          </a>
+          <a routerLink="/" mat-menu-item>
+            <span>Напитки</span>
+          </a>
+          <a routerLink="/" mat-menu-item>
+            <span>Доставка и оплата</span>
+          </a>
+          <a routerLink="/" mat-menu-item>
+            <span>Контакты</span>
+          </a>
+        </mat-menu>
+      </div>
+
+    </div>
+  </div>
+</mat-toolbar>
+
+<div class="container">
+  <ng-content></ng-content>
+</div>

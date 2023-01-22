@@ -1,0 +1,58 @@
+.toolbar
+  color: #a46b00
+  background: inherit
+  box-shadow: 0 5px 8.5px #98989833
+  padding: 50px 0
+  margin-bottom: 125px
+
+@media screen and (max-width: 996px)
+  .toolbar
+    margin-bottom: 50px
+
+.toolbar__inner
+  width: 100%
+  padding: 16px
+
+.logo
+  text-decoration: none
+
+.logo__img
+  padding-right: 8px
+
+.logo__text
+  font-size: 24px
+  letter-spacing: 2px
+  line-height: 1.2em
+  text-transform: uppercase
+  color: #ffc468
+  font-family: "Muller Black", sans-serif
+
+.toolbar__nav a
+  font-size: 16px
+  letter-spacing: 0
+  text-decoration: none
+  color: #a46b00
+  font-family: 'Muller Regular', sans-serif
+  padding: 0 25px
+
+.toolbar__menu
+  display: none
+
+.mat-menu-item
+  font-size: 16px
+  letter-spacing: 0
+  color: #a46b00
+  font-family: 'Muller Regular', sans-serif
+
+::ng-deep .mat-menu-content:not(:empty)
+  background: #fff
+
+@media screen and (max-width: 996px)
+  .toolbar__inner
+    justify-content: space-between !important
+
+  .toolbar__nav
+    display: none
+
+  .toolbar__menu
+    display: block
