@@ -1,8 +1,8 @@
 <mat-card class="card" fxLayout="column" fxLayoutAlign="center center">
-  <img class="card__img" mat-card-image src="../../../../assets/images/pizza_1.png" alt="Pizza">
+  <img class="card__img" mat-card-image [src]="product.url" [alt]="product.title">
   <div fxLayout="column" fxLayoutAlign="center center">
-    <h4 class="card__title">Мясная Делюкс</h4>
-    <p class="card__subtitle">Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы, соус чили, ананасы</p>
+    <h4 class="card__title">{{product.title}}</h4>
+    <p class="card__subtitle">{{product.description}}</p>
   </div>
   <button class="main-button main-button_dark card__button" mat-button>В корзину</button>
 </mat-card>

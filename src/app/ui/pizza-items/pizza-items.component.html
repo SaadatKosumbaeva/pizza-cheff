@@ -1,23 +1,8 @@
 <div class="cards">
   <h3 class="cards__title">Выберите свою любимую пиццу</h3>
   <div fxLayout="row wrap" class="cards__inner">
-    <div class="cards__item">
-      <app-pizza-item></app-pizza-item>
-    </div>
-    <div class="cards__item">
-      <app-pizza-item></app-pizza-item>
-    </div>
-    <div class="cards__item">
-      <app-pizza-item></app-pizza-item>
-    </div>
-    <div class="cards__item">
-      <app-pizza-item></app-pizza-item>
-    </div>
-    <div class="cards__item">
-      <app-pizza-item></app-pizza-item>
-    </div>
-    <div class="cards__item">
-      <app-pizza-item></app-pizza-item>
+    <div class="cards__item" *ngFor="let p of products">
+      <app-pizza-item [product]="p"></app-pizza-item>
     </div>
   </div>
 </div>

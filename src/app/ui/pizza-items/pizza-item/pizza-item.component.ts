@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Product } from '../../../models/product.model';
 
 @Component({
   selector: 'app-pizza-item',
@@ -6,4 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./pizza-item.component.sass']
 })
 export class PizzaItemComponent {
+  @Input() product!: Product;
 }
