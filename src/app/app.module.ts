@@ -20,6 +20,9 @@ import { PizzaItemsComponent } from './ui/pizza-items/pizza-items.component';
 import { PizzaItemComponent } from './ui/pizza-items/pizza-item/pizza-item.component';
 import { OrderFormComponent } from './ui/order-form/order-form.component';
 import { QualityItemsComponent } from './ui/quality-items/quality-items.component';
+import { ValidatePhoneDirective } from './directives/validate-phone.directive';
+import { ExcludeSpecSymbolsDirective } from './directives/exclude-spec-symbols.directive';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,8 @@ import { QualityItemsComponent } from './ui/quality-items/quality-items.componen
     PizzaItemComponent,
     OrderFormComponent,
     QualityItemsComponent,
+    ValidatePhoneDirective,
+    ExcludeSpecSymbolsDirective,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +50,7 @@ import { QualityItemsComponent } from './ui/quality-items/quality-items.componen
     MatInputModule,
     MatIconModule,
     MatMenuModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
