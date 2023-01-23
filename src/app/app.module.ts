@@ -10,6 +10,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,8 +23,8 @@ import { PizzaItemComponent } from './ui/pizza-items/pizza-item/pizza-item.compo
 import { OrderFormComponent } from './ui/order-form/order-form.component';
 import { QualityItemsComponent } from './ui/quality-items/quality-items.component';
 import { ValidatePhoneDirective } from './directives/validate-phone.directive';
-import { ExcludeSpecSymbolsDirective } from './directives/exclude-spec-symbols.directive';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ImageModalComponent } from './ui/image-modal/image-modal.component';
+import { SpecialCharacterDirective } from './directives/spec-character.directive';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     OrderFormComponent,
     QualityItemsComponent,
     ValidatePhoneDirective,
-    ExcludeSpecSymbolsDirective,
+    ImageModalComponent,
+    SpecialCharacterDirective,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatIconModule,
     MatMenuModule,
     MatSnackBarModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

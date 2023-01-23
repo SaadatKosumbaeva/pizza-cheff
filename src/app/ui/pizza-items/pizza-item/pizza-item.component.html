@@ -1,5 +1,6 @@
 <mat-card class="card" fxLayout="column" fxLayoutAlign="center center">
-  <img class="card__img" mat-card-image [src]="product.url" [alt]="product.title">
+  <img class="card__img" mat-card-image [src]="product.url" [alt]="product.title"
+       (click)="openDialog()">
   <div fxLayout="column" fxLayoutAlign="center center">
     <h4 class="card__title">{{product.title}}</h4>
     <p class="card__subtitle">{{product.description}}</p>

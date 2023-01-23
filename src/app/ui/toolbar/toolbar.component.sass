@@ -38,11 +38,13 @@
 .toolbar__menu
   display: none
 
-.mat-menu-item
-  font-size: 16px
-  letter-spacing: 0
+::ng-deep .mat-mdc-menu-content
+  display: none !important
+
+::ng-deep .mdc-list-item__primary-text
+  letter-spacing: 0 !important
   color: #a46b00
-  font-family: 'Muller Regular', sans-serif
+  font-family: 'Muller Regular', sans-serif !important
 
 ::ng-deep .mat-menu-content:not(:empty)
   background: #fff
@@ -56,3 +58,6 @@
 
   .toolbar__menu
     display: block
+
+  ::ng-deep .mat-mdc-menu-content
+    display: block !important

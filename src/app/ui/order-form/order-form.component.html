@@ -10,9 +10,8 @@
     <form #f="ngForm" fxLayout="column" (ngSubmit)="onSubmit()">
       <mat-form-field appearance="outline" hideRequiredMarker>
         <mat-label>Ваше имя</mat-label>
-        <input type="text" name="name" appInputRestriction required matInput ngModel #name="ngModel">
+        <input type="text" appSpecSymbols name="name" required matInput ngModel #name="ngModel">
         <mat-error *ngIf="name.touched && name.hasError('required')">Обязательное поле!</mat-error>
-        <mat-error *ngIf="name.touched && name.hasError('letters')">Недопустимые символы!</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline" hideRequiredMarker>

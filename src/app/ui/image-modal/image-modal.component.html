@@ -1,0 +1,8 @@
+<div mat-dialog-content *ngIf="data.data">
+  <img [src]="data.data.url" [alt]="data.data.title" class="image">
+</div>
+<div mat-dialog-actions>
+  <button mat-icon-button (click)="onCloseClick()" color="warn">
+    <mat-icon>cancel</mat-icon>
+  </button>
+</div>
